@@ -1,0 +1,169 @@
+
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px;
+  color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  background: #0b0b0b;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  text-align: center;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  margin-bottom: 4px;
+  color: #facc15;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+}
+
+.intro p {
+  color: #a3a3a3;
+  overflow-wrap: anywhere;
+}
+
+.intro a {
+  color: #facc15;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.intro a:hover {
+  color: #fde68a;
+  text-decoration: underline;
+}
+
+section {
+  margin: 30px 0;
+}
+
+section h2 {
+  color: #facc15;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+}
+
+section p {
+  color: #d4d4d4;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.skill-group {
+  padding: 18px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.skill-group:hover {
+  border-color: #facc15;
+  transform: translateY(-2px);
+}
+
+.skill-group h3 {
+  color: #facc15;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: #292929;
+  border: 1px solid #454545;
+  color: #e5e5e5;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+  padding-left: 22px;
+  color: #d4d4d4;
+}
+
+ul li::marker {
+  color: #facc15;
+}
+
+button {
+  border: 1px solid #eab308;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: #eab308;
+  color: #111111;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #facc15;
+  border-color: #fde68a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(250, 204, 21, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.interaction {
+  padding: 18px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 12px;
+}
+
+.interaction p {
+  color: #a3a3a3;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    margin: 12px;
+    padding: 18px;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+}
